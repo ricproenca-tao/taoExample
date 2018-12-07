@@ -27,7 +27,7 @@ return array(
     'label' => 'Example',
     'description' => 'taoExample description',
     'license' => 'GPL-2.0',
-    'version' => '0.2',
+    'version' => '0.3',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=22.0.2'
