@@ -10,9 +10,9 @@ class Greeter extends \tao_actions_CommonModule {
         parent::__construct();
 
         $this->pilots = [
-            'red_1' => 'luke',
-            'red_2' => 'biggs',
-            'red_3' => 'wedge',
+            'red_1' => 'Luke',
+            'red_2' => 'Biggs',
+            'red_3' => 'Wedge',
         ];
     }
 
@@ -33,7 +33,7 @@ class Greeter extends \tao_actions_CommonModule {
 
         foreach ($this->pilots as $index => $name) {
             $data['children'][] = array(
-                'data' => 'my name is ' . ucfirst($name),
+                'data' => 'My name is ' . ucfirst($name),
                 'attributes' => array(
                     'id' => $index,
                     'class' => 'node-instance'

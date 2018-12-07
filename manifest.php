@@ -24,10 +24,10 @@
  */
 return array(
     'name' => 'taoExample',
-    'label' => 'taoExample label',
+    'label' => 'Example',
     'description' => 'taoExample description',
     'license' => 'GPL-2.0',
-    'version' => '0.1',
+    'version' => '0.2',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=22.0.2'
@@ -37,7 +37,11 @@ return array(
         array('grant', 'http://www.tao.lu/Ontologies/generis.rdf#taoExampleManager', array('ext'=>'taoExample')),
     ),
     'install' => array(
+        'php' => array(
+            oat\taoExample\scripts\install\SetPlatformTheme::class
+        )
     ),
+    'update' => \oat\taoExample\scripts\update\Updater::class,
     'uninstall' => array(
     ),
     'routes' => array(
