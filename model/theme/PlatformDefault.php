@@ -35,7 +35,7 @@ class PlatformDefault extends DefaultTheme
     /**
      * Theme label
      */
-    private $themeLabel = 'My default theme';
+    private $themeLabel = 'My tao Example theme';
 
     /**
      * @var string
@@ -45,7 +45,7 @@ class PlatformDefault extends DefaultTheme
     /**
      * Theme's id, by default label without spec chars
      */
-    private $themeId;
+    private $themeId = 'taoExampleDefault';
 
 
 
