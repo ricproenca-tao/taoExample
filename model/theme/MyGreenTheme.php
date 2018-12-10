@@ -23,19 +23,19 @@ use oat\tao\helpers\Template;
 use oat\tao\model\theme\DefaultTheme;
 use oat\tao\model\theme\Theme;
 
-class PlatformDefault extends DefaultTheme
+class MyGreenTheme extends DefaultTheme
 {
 
     /**
      * Id of this extension
      */
-    private $extensionId;
+    private $extensionId = "taoExample";
 
 
     /**
      * Theme label
      */
-    private $themeLabel = 'My tao Example theme';
+    private $themeLabel = 'SCP theme for taoExample';
 
     /**
      * @var string
@@ -45,7 +45,7 @@ class PlatformDefault extends DefaultTheme
     /**
      * Theme's id, by default label without spec chars
      */
-    private $themeId = 'taoExampleDefault';
+    private $themeId = '';
 
 
 

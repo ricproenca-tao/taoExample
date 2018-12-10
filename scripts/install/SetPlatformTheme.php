@@ -21,7 +21,7 @@
 namespace oat\taoExample\scripts\install;
 
 use oat\oatbox\extension\InstallAction;
-use oat\taoExample\model\theme\PlatformDefault;// provided your theme class has that name
+use oat\taoExample\model\theme\MyGreenTheme;// provided your theme class has that name
 use oat\oatbox\service\ServiceManager;
 use oat\tao\model\theme\ThemeService;
 
@@ -36,7 +36,7 @@ class SetPlatformTheme extends InstallAction
         $serviceManager = ServiceManager::getServiceManager();
         $themeService = $serviceManager->get(ThemeService::SERVICE_ID);
 
-        $themeService->setTheme(new PlatformDefault());
+        $themeService->setTheme(new MyGreenTheme());
         $serviceManager->register(ThemeService::SERVICE_ID, $themeService);
 
         return new \common_report_Report(\common_report_Report::TYPE_SUCCESS, 'Platform theme registered');
